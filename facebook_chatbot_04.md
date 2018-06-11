@@ -189,7 +189,7 @@ $ npm install
 ```
 
 자 이 서버파일을 heroku 클라우드에 올려볼껀데, 그 전에 heroku 클라우드가 제일 먼저 실행하는 명령어를 지정하는 파일을 만들어준다.
-Procfile 을 만들어준다. (확장자 없음)
+Procfile 파일을 만들어 다음을 입력해준다. (확장자 없음)
 ```
 web: node ./bin/www
 ```
@@ -223,25 +223,26 @@ $ heroku apps
 // 현재는 없음.
 ```
 
-node.js 에서 만든 어플리케이션을 heroku 에 등록한다.
-
-$ heroku create 
-mighty-river-50583 이라는 이름이 지어지게 된다.
+node.js 에서 만든 어플리케이션을 heroku 에 등록할꺼다.
 
 $ heroku apps:create [앱이름]
 $ heroku apps:create sooheroku
 https://sooheroku.herokuapp.com/ | https://git.heroku.com/sooheroku.git 이 만들어지니 앱이름은 유니크하게~!
 
+만약 `$ heroku create` 로만 앱을 만들면 mighty-river-50583 이라는 이름이 지어지게 된다.
+
 잘못 만들어졌으면 apps:delete [앱이름]
 
+```
 git init
 git add .
 git commit
 git push
+```
 하면 서버에 올라가게 되겠지~
-heroku 연동해서 프로젝트 ....
 
 Next>
+다음 시간에 heroku 연동해서 프로젝트 만들어 볼꺼다.
 챗봇을 어떻게 만들면 좋을지!
 
 
