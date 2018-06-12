@@ -174,9 +174,20 @@ Heroku 를 사용하는 이유
 - 웹 사이트를 인터넷에 공개할 수 있도록 서버를 제공.
 
 ### Heroku 앱 생성
+heroku.com 사이트에서 만들거나, 터미널에서 생성하는 2가지 방법이 있다.
+
+#### 1) heroku 웹 사이트에서 만들기
+
 1) http://heroku.com 가입
-2) 로그인 > Dashboard
-3) 예제 node.js 어플리케이션 생성
+2) 로그인 > Dashboard 에서 만들기
+
+#### 2) 터미널에서 앱 만들기
+```
+$ heroku apps:create [app name]
+$ heroku apps:create sooheroku
+```
+
+예제 node.js 어플리케이션 생성
 
 ```javascript
 // 서버이름은 유니크하게!
@@ -206,32 +217,40 @@ heroku -v
 ```
 
 #### heroku 배포와 git
-- 로컬의 소스를 heroku 에 업로드해야하는데 git 을 통해서 가야한다.
-- remote repository 에 업로드하면 heroku 가 **자동으로** deploy 해준다.
+- 로컬의 소스를 heroku 에 업로드 할 땐 git 을 이용한다.
+- remote repository 에 업로드 되면 heroku 가 **자동으로** deploy 해준다.
 - 오류가 나면 이때 확인 된다.
 
 heroku 에 로그인해보자.
 ```
 $ heroku login
 ```
-아이디랑 패스워드 입력하면 로그인 되었습니다~
+아이디랑 패스워드 입력하면 로그인 성공.
+```
 Logged in as naan_ace@naver.com
+```
 
-우리가 갖고 있는 apps 를 봅시당
+**heroku 명령어**
+- heroku apps 리스트 보기
 ```
 $ heroku apps
-// 현재는 없음.
+```
+
+- heroku app 만들기
+```
+$ heroku apps:create [앱이름]
+$ heroku apps:create sooheroku
+
+만약 $ heroku create 로만 앱을 만들면 mighty-river-50583 이라는 이름이 지어지게 된다.
+```
+https://sooheroku.herokuapp.com/ | https://git.heroku.com/sooheroku.git 이렇게 만들어지니 앱이름은 유니크하게 작성해야 한다.
+
+- app 삭제
+```
+$ heroku apps:delete [앱이름]
 ```
 
 node.js 에서 만든 어플리케이션을 heroku 에 등록할꺼다.
-
-$ heroku apps:create [앱이름]
-$ heroku apps:create sooheroku
-https://sooheroku.herokuapp.com/ | https://git.heroku.com/sooheroku.git 이 만들어지니 앱이름은 유니크하게~!
-
-만약 `$ heroku create` 로만 앱을 만들면 mighty-river-50583 이라는 이름이 지어지게 된다.
-
-잘못 만들어졌으면 apps:delete [앱이름]
 
 ```
 git init
@@ -239,10 +258,4 @@ git add .
 git commit
 git push
 ```
-하면 서버에 올라가게 되겠지~
-
-Next>
-다음 시간에 heroku 연동해서 프로젝트 만들어 볼꺼다.
-챗봇을 어떻게 만들면 좋을지!
-
-
+- .gitignore 파일은 업로드 하기 싫은 파일을 설정해둘 수 있다.
