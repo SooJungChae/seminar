@@ -121,10 +121,16 @@ public class ApiMemoResource {
 - 대답해주려면 [지역, 시간, 조건] 같은 규칙이 필요한 규칙 집합 기반 챗봇
 - 인공지능이 있는 기계 학습 기반 챗봇
 
-제공하는 PLN어느정도  -
-말ㄹ 
+AI
+- Bot : 인터넷으로 연결된 환경에서 업무 자동화 어플리케이션
+- ChatBot : 자연어를 써서 커뮤니케이션할 수 있는 Bot
+- AI Assistant : 유저의 다양한 요청에 서비스 할 수 있는 Bot
+
+- 자연어 처리 NLU Understanding 말을 이해하고
+- NLG Generate 말을 만드는게 목표임
+- 로그 파일을 분석해야 한다.
+- 자연어 처리 엔진에서 질문의 가장 핵심적인 단어들만 필터링 할 수 있다.
+- about.mattermost.com --> Messaging Platform Server 를 제공한다.
+- 사용자 별로 thread 화 해야 한다.
 
 주고받는 대화의 인터페이스를... 글로만 해야할까??
-ㄴ뢔방말로 말로 ㅇ
-말로
-아 맘스터치 챗봇 만들어주고 싶다... ㅋㅋㅋ
