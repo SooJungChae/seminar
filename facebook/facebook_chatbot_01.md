@@ -1,5 +1,5 @@
 
-페이스북 이노베이션 랩 교육 - Facebook API Intermediate Class 에 참석하며 기록하는 문서입니다.
+페이스북 이노베이션 랩 교육 - Facebook API Intermediate Class 에 참석하며 기록하는 문서입니다.<br/>
 수업은 2018년 5월 29일을 기준으로 총 18시간을 이수하게 되며, 3주간 진행됩니다.
 
 ---
