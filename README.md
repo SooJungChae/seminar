@@ -9,6 +9,7 @@ Summarize variety of seminar
 - [05.Programming Language Fundamentals](https://github.com/SooJungChae/seminar/blob/master/facebook/facebook_chatbot_05.md)
 - [06.Make a Facebook Messenger ChatBot](https://github.com/SooJungChae/seminar/blob/master/facebook/facebook_chatbot_06.md)
 - 2018-06-23 [개발자커리어관리법](https://github.com/SooJungChae/seminar/blob/master/facebook/개발자커리어관리법.md)
+- 2019-08-22 [Silicon Valley 2020 & Global Economy Outlook](./facebook/siliconValley2020.md) 워어 .. 여기에 거의 1년만에 방문했군
 
 ## Naver
 - 2018-05-24 [naverD2_android_seminal](https://github.com/SooJungChae/seminar/blob/master/naver/20180524_naverD2_android_seminal.md)
